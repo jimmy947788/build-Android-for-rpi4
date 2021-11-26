@@ -16,7 +16,7 @@ for 64-bit binaries :
 
 ### Set compiler cache enable.
 
-sudo apt install ccache
+> sudo apt install ccache
 export USE_CCACHE=1
 export CCACHE_DIR=$HOME/.ccache
 ccache -M 70G
