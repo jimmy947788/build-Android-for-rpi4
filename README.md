@@ -2,7 +2,6 @@
 
 
 ## Requment
-
 ### build kernel library
 > sudo apt install gcc-arm-linux-gnueabihf libssl-dev bison flex
 
@@ -13,3 +12,11 @@ for 32-bit binaries :
 
 for 64-bit binaries : 
 > sudo apt-get install libncurses5
+
+
+### Set compiler cache enable.
+
+sudo apt install ccache
+export USE_CCACHE=1
+export CCACHE_DIR=$HOME/.ccache
+ccache -M 70G
