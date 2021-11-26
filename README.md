@@ -20,3 +20,7 @@ for 64-bit binaries :
 export USE_CCACHE=1
 export CCACHE_DIR=$HOME/.ccache
 ccache -M 70G
+
+
+### make image 
+> sudo apt-get install kpartx

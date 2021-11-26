@@ -11,7 +11,7 @@ ret_code=$?
 
 if [ $ret_code = 0 ]
 then
-    bash clean_sdcard.sh $devname 
+    bash ./clean_sdcard.sh $devname 
     #echo "devname=$devname"
     dd if=$IMGNAME of=$devname bs=4M conv=fsync status=progress
 else

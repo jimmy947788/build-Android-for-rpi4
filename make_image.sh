@@ -2,12 +2,15 @@
 
 set -eu
 
+WORKER_FOLDER=$(grep WORKER_FOLDER .env | cut -d '=' -f2)
+echo "WORKER_FOLDER=$WORKER_FOLDER"
+
 readonly DATE=`date +%Y%m%d`
 readonly IMGNAME=android-$DATE-rpi4.img
 readonly IMGSIZE=2
-readonly OUTDIR=$HOME/Developer/Android-Rpi4/out/target/product/rpi4
-readonly KERDIR=$HOME/Developer/Android-Rpi4/kernel
-readonly DEVDIR=$HOME/Developer/Android-Rpi4/device
+readonly OUTDIR=$WORKER_FOLDER/out/target/product/rpi4
+readonly KERDIR=$WORKER_FOLDER/kernel
+readonly DEVDIR=$WORKER_FOLDER/device
 
 
 echo "creating image file $IMGNAME"
@@ -85,4 +88,4 @@ sync
 sudo rm -rf './sdcard/boot/'
 echo "done: $IMGNAME"
 
-bash ./write_sdcard.sh
+bash ./write_sdcard.sh "$IMGNAME"
