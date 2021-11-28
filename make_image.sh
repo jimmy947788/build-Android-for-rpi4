@@ -2,15 +2,15 @@
 
 set -eu
 
-WORKER_FOLDER=$(grep WORKER_FOLDER .env | cut -d '=' -f2)
-echo "WORKER_FOLDER=$WORKER_FOLDER"
+ANDROID_FOLDER=$(grep ANDROID_FOLDER .env | cut -d '=' -f2)
+echo "ANDROID_FOLDER=$ANDROID_FOLDER"
 
 readonly DATE=`date +%Y%m%d`
 readonly IMGNAME=android-$DATE-rpi4.img
 readonly IMGSIZE=2
-readonly OUTDIR=$WORKER_FOLDER/out/target/product/rpi4
-readonly KERDIR=$WORKER_FOLDER/kernel
-readonly DEVDIR=$WORKER_FOLDER/device
+readonly OUTDIR=$ANDROID_FOLDER/out/target/product/rpi4
+readonly KERDIR=$ANDROID_FOLDER/kernel
+readonly DEVDIR=$ANDROID_FOLDER/device
 
 
 echo "creating image file $IMGNAME"
