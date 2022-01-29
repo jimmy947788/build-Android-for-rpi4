@@ -27,7 +27,7 @@
     ```bash
     repo sync -c -j$(nproc --all)
     ```
-    > To speed syncs, pass the -c (current branch) and -j `threadcount` flagss
+    > To speed syncs, pass the -c (current branch) and -j `threadcount` flags.
 
 ### Jekyll Themes
 
