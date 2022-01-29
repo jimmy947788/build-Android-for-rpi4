@@ -21,7 +21,7 @@
     >To check out a branch other than master, specify it with -b. For a list of branches, see [Source code tags and builds](https://source.android.com/setup/start/build-numbers#source-code-tags-and-builds).
 4. Download RPi4 project list for Android source code
     ```bash
-    wget https://github.com/jimmy9478/build-Android-for-rpi4/blob/arpi-10/loacl_manifests.xml -O .repo/local_manifests/default.xml
+    wget https://github.com/jimmy9478/build-Android-for-rpi4/blob/arpi-10/loacl_manifests.xml -O .repo/local_manifests.xml
     ```
 5. Downloading the Android source tree 
     ```bash
