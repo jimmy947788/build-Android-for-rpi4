@@ -2,7 +2,7 @@
 
 使用[`AOSP`](https://source.android.com/setup/build/downloading) (_Android Open  Source Project_)原始碼來編譯出給Raspberry Pi能安裝的Android系統。
 
-## Android  Source
+## Android 
 ### Initializing a Repo client
 1. Create working directry for Android Source
     ``` bash
@@ -19,7 +19,7 @@
     repo init -u https://android.googlesource.com/platform/manifest -b android-10.0.0_r47
     ```
     >To check out a branch other than master, specify it with -b. For a list of branches, see [Source code tags and builds](https://source.android.com/setup/start/build-numbers#source-code-tags-and-builds).
-4. Download project list for Raspberry Pi 4
+4. Download RPi4 project list for Android source code
     ```bash
     git clone https://github.com/jimmy9478/arpi_loacl_manifests.git .repo/local_manifests -b arpi-10
     ```
