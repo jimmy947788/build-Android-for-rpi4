@@ -28,6 +28,7 @@
     repo sync -c -j$(nproc --all)
     ```
     > To speed syncs, pass the -c (current branch) and -j `threadcount` flagss
+
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jimmy9478/build-Android-for-rpi4/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
